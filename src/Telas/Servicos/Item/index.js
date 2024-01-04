@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button, Text, TextInput, View } from 'react-native';
 import estilos from './estilos';
 import CampoInteiro from "../../../Components/CampoInteiro";
+import Botao from "../../../Components/CampoInteiro/Button";
 
 export default function Item({ nome, preco, descricao }) {
 
@@ -19,7 +20,7 @@ export default function Item({ nome, preco, descricao }) {
             <View>
                 <View style={estilos.valor} >
                     <Text style={estilos.descricao} >Quantidade</Text>
-                    <CampoInteiro valor={quantidade} acao={setQuantidade} />
+                    <CampoInteiro estilos={estilos.quantidade} valor={quantidade} acao={setQuantidade} />
                 </View>
 
                 <View style={estilos.valor} >
@@ -29,7 +30,7 @@ export default function Item({ nome, preco, descricao }) {
 
             </View>
 
-            <Button title="Adicionar" />
+            <Botao valor="Adicionar" acao={() => { }} />
 
         </View>
 

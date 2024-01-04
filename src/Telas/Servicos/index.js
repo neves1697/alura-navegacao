@@ -33,6 +33,7 @@ export default function Servicos() {
 
             <FlatList
                 data={servicos}
+                removeClippedSubviews={false}
                 renderItem={({ item }) => <Item {...item} />}
                 keyExtractor={({ id }) => String(id)}
             />

@@ -56,7 +56,9 @@ export default function Item({ nome, preco, descricao }) {
 
                 </View>
 
-                <Botao valor="Adicionar" acao={() => { }} />
+                
+
+                <Botao valor="Adicionar ao carrinho" acao={() => { }} />
 
             </View>
         }

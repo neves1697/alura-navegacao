@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, SafeAreaView, StatusBar, FlatList } from 'react-native';
+import { SafeAreaView, StatusBar, FlatList } from 'react-native';
 import Item from "./Item";
 
 const servicos = [
@@ -29,8 +29,6 @@ export default function Servicos() {
     return <>
         <SafeAreaView>
             <StatusBar />
-            <Text>Serviços</Text>
-
             <FlatList
                 data={servicos}
                 removeClippedSubviews={false}

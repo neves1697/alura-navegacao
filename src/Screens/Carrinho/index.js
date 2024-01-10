@@ -1,0 +1,44 @@
+import React from "react";
+import { FlatList } from 'react-native';
+import Item from "./Item";
+import TelaPadrao from "../../Components/TelaPadrao";
+
+const servicos = [
+    {
+        id: 1,
+        nome: "Banho",
+        preco: 150.50,
+        descricao: "Banho e Tosa",
+        quantidade: 1
+    },
+
+    {
+        id: 2,
+        nome: "Vacina dor",
+        preco: 200,
+        descricao: "1 Dose 10 ml por KG",
+        quantidade: 2
+    },
+
+    {
+        id: 3,
+        nome: "Relaxamento para gatos",
+        preco: 450,
+        descricao: "Deixe seu animal mais relaxado e sem estres",
+        quantidade: 3
+    }
+];
+
+export default function Carrinho() {
+    return <>
+        <TelaPadrao>
+            <FlatList
+                data={servicos}
+                removeClippedSubviews={false}
+                renderItem={({ item }) => <Item {...item} />}
+                keyExtractor={({ id }) => String(id)}
+            />
+        </TelaPadrao>
+
+    </>
+}

@@ -35,7 +35,6 @@ export default function Item({ nome, preco, descricao }) {
             } </Text>
         </TouchableOpacity>
 
-
         {expandir &&
             <View style={estilos.carrinho} >
 
@@ -55,8 +54,6 @@ export default function Item({ nome, preco, descricao }) {
                     </View>
 
                 </View>
-
-                
 
                 <Botao valor="Adicionar ao carrinho" acao={() => { }} />
 

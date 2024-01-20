@@ -7,11 +7,10 @@ import Servicos from './src/Screens/Servicos';
 import 'intl';
 import 'intl/locale-data/jsonp/pt-BR';
 import Carrinho from './src/Screens/Carrinho';
+import Rotas from './src/routes/Rotas';
 
 export default function App() {
-  return (
-    <View>
-      <Carrinho />
-    </View>
-  );
+  return <>
+    <Rotas />
+  </>
 }

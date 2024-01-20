@@ -1,12 +1,12 @@
 import React from "react";
 import { SafeAreaView, StatusBar, FlatList, KeyboardAvoidingView, Platform } from 'react-native';
-import estilosServicos from '../../estilos';
+import estilosServicos, { cores } from '../../estilos';
 import Item from "../../Screens/Carrinho/Item";
 
 export default function TelaPadrao({ children }) {
     return <>
         <SafeAreaView>
-            <StatusBar />
+            <StatusBar backgroundColor={cores.roxo} />
 
             <KeyboardAvoidingView behavior={Platform.OS == 'ios' ? "padding" : "height"} >
                 <FlatList

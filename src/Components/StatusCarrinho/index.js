@@ -6,11 +6,9 @@ import Botao from "../CampoInteiro/Button";
 
 import estilosCarrinho from "../StatusCarrinho/estilosCarrinho";
 
-
 export default function StatusCarrinho({ total }) {
     return <>
         <View style={estilosCarrinho.conteudo} >
-
             <View style={estilosCarrinho.total} >
                 <Text style={estilosCarrinho.descricao} >Total do carrinho:</Text>
                 <Text style={estilosCarrinho.valor} >
